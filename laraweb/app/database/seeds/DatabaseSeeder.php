@@ -1,0 +1,22 @@
+<?php
+
+class DatabaseSeeder extends Seeder {
+
+	/**
+	 * Run the database seeds.
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
+		Eloquent::unguard();
+
+		// $this->call('UserTableSeeder');
+		$this->call('OstypesTableSeeder');
+		$this->call('UsersTableSeeder');
+		$this->call('BrandsTableSeeder');
+		$this->call('CategoriesTableSeeder');
+		$this->call('SmartphonesTableSeeder');
+	}
+
+}
