@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>CRUDSP Bootstrap</title>
+    <title><?php echo $titleweb; ?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -25,7 +25,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="{{ URL::to('/') }}">CRUDSP</a>
-          <a class="navbar-brand" href="{{ URL::to('/dashboard/addmerk') }}">INPUT MERK</a>
+          <a class="navbar-brand" href="{{ URL::to('/dashboard') }}">SMARTPHONE</a>
+          <a class="navbar-brand" href="{{ URL::to('/dashboard/merk') }}">MERK</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">

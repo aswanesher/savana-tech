@@ -4,6 +4,7 @@ class DashboardController extends \BaseController {
 
 	public function index()
 	{
+			$data['titleweb'] = 'Website CRUD';
 			$data['allsp'] = DB::table('smartphones')
 											->join('brands','brand_id','=','id_brand')
 											->join('categories','category_id','=','id_category')

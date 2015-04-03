@@ -29,7 +29,7 @@
 			</tr>
 			@endforeach
 			<tr>
-				<td colspan="6"><a href="{{ URL::to('dashboard/add') }}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i></a></td>
+				<td colspan="6"><a href="{{ URL::to('dashboard/addmerk') }}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i></a></td>
 			</tr>
 		</tbody>
 		</table>
