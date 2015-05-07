@@ -1,0 +1,6 @@
+-- Running Query --
+
+INSERT INTO `menu_horizon` (`hoz_menu_nama`, `hoz_menu_link`, `hoz_menu_icon`) VALUES ('Pesan', 'm_pesan', 'fa fa-chat');
+INSERT INTO `menu_vertical` (`hoz_menu_id`, `ver_menu_nama`, `ver_menu_link_page`) VALUES ('9', 'Kirim Pesan', 'med_pesan');
+UPDATE `menu_vertical` SET `ver_menu_nama`='Kotak Masuk', `ver_menu_link_page`='med_masuk' WHERE (`ver_menu_id`='56');
+UPDATE `menu_horizon` SET `hoz_menu_icon`='fa fa-comment' WHERE (`hoz_menu_id`='9')

@@ -1,0 +1,34 @@
+#panoramicBoxHolder #panoramicBoxContainer {
+background-color: #1ba0e2;
+}
+
+#panoramicBoxContainer {
+left: 0;
+position: absolute;
+}
+
+#panoramicBoxHolder, #panoramicBoxContainer {
+width: 100%;}
+
+#panoramicBoxHolder, #panoramicBoxContainer, #panoramicBoxFrame, #panoramicBoxContainer .panoramicImg {
+height: 440px;
+}
+div {
+display: block;
+}
+
+#panoramicBoxContainer .panoramic1 {
+background-image: url("/assets/stylesheets/images/background/how-to-20002.jpg");
+}
+
+#panoramicBoxContainer .panoramicImg {
+width: 100%;
+position: absolute;
+}
+
+#panoramicBoxHolder {
+padding-bottom: 20px;
+}
+
+
+

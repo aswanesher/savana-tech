@@ -1,0 +1,51 @@
+/*Ini Untuk Timer Konfirmasi di Widget Kanan*/
+#rightColumn #expirationTime {
+color: #000;
+background-color: #b0e3f4;
+margin: 10px 0 0;
+text-align: center;
+padding: 10px;
+width: 302px;
+}
+confirmPaymentmedia="screen"
+.priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+user agent stylesheetdiv {
+display: block;
+}
+
+.paymentGreyContainer {
+background: #f0f0f0;
+padding: 15px;
+margin-bottom: 10px;
+border-left: 3px solid #1ba0e2;
+border-bottom: 1px solid #C4C4C4;
+}
+
+.clearfix {
+display: block;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+
+.paymentGreyContainer .paymentText {
+float: left;
+width: 100px;
+}
+
+.paymentGreyContainer .paymentBookingId {
+float: right;
+width: 100px;
+font-weight: bold;
+text-align: right;
+}

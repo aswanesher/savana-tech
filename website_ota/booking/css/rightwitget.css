@@ -1,0 +1,236 @@
+#bookingForm {
+overflow: hidden;
+color: #434343;
+}
+
+.priceChangeCntr {
+color: #777;
+background-color: #d9f9dc;
+margin-bottom: 10px;
+text-align: center;
+margin-top: 15px;
+}
+
+.priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+
+priceChangeCntr {
+color: #777;
+background-color: #d9f9dc;
+margin-bottom: 10px;
+text-align: center;
+margin-top: 15px;
+}
+
+.priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+
+#confirmPaymentTransfer #rightColumn .priceSummaryContainer {
+margin-right: -3px;
+}
+
+#rightColumn .priceSummaryContainer {
+width: 292px;
+}
+
+.priceSummaryContainer {
+font-size: 15px;
+}
+
+.priceSummaryContainer {
+background-color: #f0f0f0;
+padding: 7px 15px 15px 15px;
+}
+
+.priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+user agent stylesheetdiv {
+display: block;
+}
+
+#bookingForm {
+overflow: hidden;
+color: #434343;
+}
+
+priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+
+#bookingForm {
+overflow: hidden;
+color: #434343;
+}
+
+tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+table {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+
+.priceSummaryContainer {
+font-size: 15px;
+}
+
+priceChangeCntr, .priceSummaryContainer, #expirationTime, #expirationTimeSubtitle {
+height: auto;
+display: inline-block;
+zoom: 1;
+}
+
+.priceSummaryContainer table.priceTotalTable {
+border-top: 1px solid #434343;
+font-size: 20px;
+margin-top: 5px;
+}
+
+.priceSummaryContainer table {
+width: 100%;
+}
+
+tr {
+display: table-row;
+vertical-align: inherit;
+border-color: inherit;
+}
+
+.priceSummaryContainer table.priceTotalTable {
+border-top: 1px solid #434343;
+font-size: 20px;
+margin-top: 5px;
+}
+
+.priceSummaryContainer table tr td {
+vertical-align: top;
+}
+
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}
+
+.priceSummaryContainer table.priceTotalTable {
+border-top: 1px solid #434343;
+font-size: 20px;
+margin-top: 5px;
+}
+
+.priceSummaryContainer table tr td.priceContent {
+text-align: right;
+font-weight: bold;
+}
+
+.priceSummaryContainer table tr td {
+vertical-align: top;
+}
+
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}
+
+.status1 .priceWidgetSubtitleFinal, .status2 .priceWidgetSubtitleNonFinal, .status3 .priceWidgetSubtitleNonFinal, #confirmPaymentTransfer .priceWidgetSubtitleFinal {
+display: none;
+}
+
+.priceWidgetSubtitleFinal, .priceWidgetSubtitleNonFinal {
+color: #555;
+font-size: 14px;
+padding-left: 0;
+}
+
+p {
+margin-top: 0;
+color: #434343;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+.status3 .priceWidgetSubtitleFinal {
+padding-left: 0 !important;
+}
+
+.priceWidgetSubtitleFinal, .priceWidgetSubtitleNonFinal {
+color: #555;
+font-size: 14px;
+padding-left: 0;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+#hotelBookingPaymentSummary {
+clear: both;
+border-color: #1ba0e2;
+margin-top: 15px;
+padding: 7px 15px 15px 15px;
+}
+
+.tv-bg-gray {
+background-color: #f0f0f0;
+}
+
+div {
+display: block;
+}
+
+#bottomContentCntr {
+float: left;
+padding-top: 30px;
+}
+
+.priceSummaryContainer table.priceSummaryTable {
+margin-top: 5px;
+}
+
+element.style {
+}
+confirmPaymentmedia="screen"
+.priceSummaryContainer table.priceSummaryTable {
+margin-top: 5px;
+}
+confirmPaymentmedia="screen"
+.priceSummaryContainer table {
+width: 100%;
+}
+user agent stylesheettable {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+
+.priceSummaryContainer {
+font-size: 15px;
+}
+
+
