@@ -190,8 +190,8 @@
 					<ul class="nav nav-tabs" id="myTab">
 						<li onclick="mySelectUpdate()" class="active"><a data-toggle="tab" data-target="#hotel" href="javascript:;"><span class="hotel"></span> Hotel Penginapan</a></li>
 						<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" data-target="#car" href="javascript:;"><span class="car"></span> Rental Mobil</a></li>
-						<!-- <li onclick="mySelectUpdate()" class=""><a data-toggle="tab" data-target="#vacations" href="javascript:;"><span class="suitcase"></span> Obyek Wisata</a></li>
-						<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" data-target="#kuliner" href="javascript:;"><span class="culinary"></span> Kuliner</a></li> -->
+						<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" data-target="#vacations" href="javascript:;"><span class="suitcase"></span> Obyek Wisata</a></li>
+						<li onclick="mySelectUpdate()" class=""><a data-toggle="tab" data-target="#kuliner" href="javascript:;"><span class="culinary"></span> Kuliner</a></li>
 					</ul>
 					
 					<div class="tab-content" id="myTabContent">
