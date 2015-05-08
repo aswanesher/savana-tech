@@ -11,7 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<p class="links"><a href="index.html" class="selected">Main Form</a> | <a href="detail.html">Detail Form</a> |<a href="account.html">Account Form</a> | <a href="payment.html">Payment Form</a></p>
+<p class="links"><a href="index.php" class="selected">Main Form</a> | <a href="detail.php">Detail Form</a> |<a href="account.php">Account Form</a> | <a href="payment.php">Payment Form</a></p>
 <div class="tabbed-area">
   <ul class="tabs group">
     <li><a href="#box-one">Flight</a></li>
