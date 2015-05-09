@@ -1,0 +1,278 @@
+
+  <div class="page-content">
+    <!-- Page header -->
+    <div class="page-header">
+      <div class="page-title">
+        <h3> <?php echo $pageTitle; ?> <small><?php echo $pageNote; ?></small></h3>
+      </div>
+    </div>
+
+    <div class="breadcrumb-line">
+      <ul class="breadcrumb">
+        <li><a href="<?php echo URL::to('config/dashboard'); ?>"><?php echo Lang::get('core.home'); ?></a></li>
+		<li><a href="<?php echo URL::to('siswa'); ?>"><?php echo $pageTitle; ?></a></li>
+        <li class="active"><?php echo Lang::get('core.addedit'); ?> </li>
+      </ul>
+	</div>  
+	<?php if(Session::has('message')): ?>	  
+		   <?php echo Session::get('message'); ?>
+	<?php endif; ?>	
+	<div class="panel-default panel">
+		<div class="panel-body">
+
+		<ul class="parsley-error-list">
+			<?php foreach($errors->all() as $error): ?>
+				<li><?php echo $error; ?></li>
+			<?php endforeach; ?>
+		</ul>
+		 <?php echo Form::open(array('url'=>'siswa/save/'.SiteHelpers::encryptID($row['nis']), 'class'=>'form-horizontal','files' => true , 'parsley-validate'=>'','novalidate'=>' ')); ?>
+				<ul class="nav nav-tabs"><li class="active"><a href="#DataSiswa" data-toggle="tab">Data Siswa</a></li>
+				<li class=""><a href="#DataKontak" data-toggle="tab">Data Kontak</a></li>
+				<li class=""><a href="#DataRiwayat" data-toggle="tab">Data Riwayat</a></li>
+				<li class=""><a href="#DataLainnya" data-toggle="tab">Data Lainnya</a></li>
+				</ul><div class="tab-content"><div class="tab-pane padding-lg active" id="DataSiswa"> 
+									
+								  <div class="form-group  " >
+									<label for="Nis" class=" control-label col-md-4 text-left"> Nis <span class="asterix"> * </span></label>
+									<div class="col-md-6">
+									  <?php echo Form::text('nis', $row['nis'],array('class'=>'form-control', 'placeholder'=>'', 'required'=>'true'  )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Nama Siswa" class=" control-label col-md-4 text-left"> Nama Siswa <span class="asterix"> * </span></label>
+									<div class="col-md-6">
+									  <?php echo Form::text('nama_siswa', $row['nama_siswa'],array('class'=>'form-control', 'placeholder'=>'', 'required'=>'true'  )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Tgl Lahir" class=" control-label col-md-4 text-left"> Tgl Lahir </label>
+									<div class="col-md-6">
+									  
+				<?php echo Form::text('tgl_lahir', $row['tgl_lahir'],array('class'=>'form-control date', 'style'=>'width:150px !important;')); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Kelas" class=" control-label col-md-4 text-left"> Kelas </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('kelas', $row['kelas'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Tahun Ajaran" class=" control-label col-md-4 text-left"> Tahun Ajaran </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('tahun_ajaran', $row['tahun_ajaran'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Tahun Masuk" class=" control-label col-md-4 text-left"> Tahun Masuk </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('tahun_masuk', $row['tahun_masuk'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Foto" class=" control-label col-md-4 text-left"> Foto </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('foto', $row['foto'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 
+			</div>
+			
+			<div class="tab-pane padding-lg " id="DataKontak"> 
+									
+								  <div class="form-group  " >
+									<label for="Alamat" class=" control-label col-md-4 text-left"> Alamat </label>
+									<div class="col-md-6">
+									  <textarea name='alamat' rows='2' id='alamat' class='form-control '  
+				           ><?php echo $row['alamat']; ?></textarea> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Rt" class=" control-label col-md-4 text-left"> Rt </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('rt', $row['rt'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Rw" class=" control-label col-md-4 text-left"> Rw </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('rw', $row['rw'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Kota" class=" control-label col-md-4 text-left"> Kota </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('kota', $row['kota'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Kode Pos" class=" control-label col-md-4 text-left"> Kode Pos </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('kode_pos', $row['kode_pos'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Email" class=" control-label col-md-4 text-left"> Email </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('email', $row['email'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="No Telp" class=" control-label col-md-4 text-left"> No Telp </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('no_telp', $row['no_telp'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="No Hp" class=" control-label col-md-4 text-left"> No Hp </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('no_hp', $row['no_hp'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 
+			</div>
+			
+			<div class="tab-pane padding-lg " id="DataRiwayat"> 
+									
+								  <div class="form-group  " >
+									<label for="Gol Darah" class=" control-label col-md-4 text-left"> Gol Darah </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('gol_darah', $row['gol_darah'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Agama" class=" control-label col-md-4 text-left"> Agama </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('agama', $row['agama'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Jel Kelamin" class=" control-label col-md-4 text-left"> Jel Kelamin </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('jel_kelamin', $row['jel_kelamin'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Status Pindah" class=" control-label col-md-4 text-left"> Status Pindah </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('status_pindah', $row['status_pindah'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Status Keluar" class=" control-label col-md-4 text-left"> Status Keluar </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('status_keluar', $row['status_keluar'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 
+			</div>
+			
+			<div class="tab-pane padding-lg " id="DataLainnya"> 
+									
+								  <div class="form-group  " >
+									<label for="Status Aktif" class=" control-label col-md-4 text-left"> Status Aktif </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('status_aktif', $row['status_aktif'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Status Langganan Sms" class=" control-label col-md-4 text-left"> Status Langganan Sms </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('status_langganan_sms', $row['status_langganan_sms'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 					
+								  <div class="form-group  " >
+									<label for="Kode Prog Keahlian" class=" control-label col-md-4 text-left"> Kode Prog Keahlian </label>
+									<div class="col-md-6">
+									  <?php echo Form::text('kode_prog_keahlian', $row['kode_prog_keahlian'],array('class'=>'form-control', 'placeholder'=>'',   )); ?> 
+									 </div> 
+									 <div class="col-md-2">
+									 	
+									 </div>
+								  </div> 
+			</div>
+			
+			
+			<div style="clear:both"></div>	
+				
+			  <div class="form-group">
+				<label class="col-sm-4 text-right">&nbsp;</label>
+				<div class="col-sm-8">	
+				<button type="submit" class="btn btn-primary ">  <?php echo Lang::get('core.sb_save'); ?> </button>
+				<button type="button" onclick="location.href='<?php echo URL::to('siswa'); ?>' " id="submit" class="btn btn-success ">  <?php echo Lang::get('core.sb_cancel'); ?> </button>
+				</div>	  
+		
+			  </div> 
+		 
+		 <?php echo Form::close(); ?>
+		</div>
+	</div>	
+</div>				 
+   <script type="text/javascript">
+	$(document).ready(function() { 
+		 
+	});
+	</script>		 
